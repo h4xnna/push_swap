@@ -1,24 +1,36 @@
 # Push_swap
 
-Push_swap project for the 42 curriculum.
+A `42` project that sorts a stack of integers using only the allowed `push_swap` operations.
 
-## Description
+## About
 
-This program sorts a stack of integers using only a limited set of allowed operations.
-The goal is to output a minimal sequence of instructions to sort the values in ascending order.
+`push_swap` computes a minimal sequence of operations to sort a stack in ascending order.
+The program is built in C and follows the rules of the `42` curriculum for this exercise.
 
-## Repository structure
+## Features
 
-- `Makefile`: builds the main project.
-- `push_swap.h`: function and structure declarations.
-- `operations/`: implementations of allowed operations (`sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`).
-- `src/`: main logic, argument validation, sorting algorithms, and utilities.
-- `printf/`: included `libftprintf` library for output.
+- Supports input as separate command-line arguments or a single quoted string.
+- Validates numeric input and integer limits.
+- Detects duplicate values.
+- Skips sorting if the stack is already sorted.
+- Uses a custom `libftprintf` implementation for output.
+
+## Project structure
+
+- `Makefile`: build targets for the project.
+- `push_swap.h`: shared types and function declarations.
+- `operations/`: implementation of move operations:
+  - `sa`, `sb`, `ss`
+  - `pa`, `pb`
+  - `ra`, `rb`, `rr`
+  - `rra`, `rrb`, `rrr`
+- `src/`: argument parsing, validation, sorting logic and helpers.
+- `printf/`: included `libftprintf` library.
 - `checker_linux`: optional verifier binary if available.
 
 ## Build
 
-From the project root, run:
+From the repository root, run:
 
 ```bash
 make
@@ -27,30 +39,21 @@ make
 Useful commands:
 
 ```bash
-make clean   # remove object files
-make fclean  # remove binary and object files
-make re      # rebuild from scratch
+make clean    # remove object files
+make fclean   # remove binary and object files
+make re       # rebuild from scratch
 ```
 
 ## Usage
 
-The `push_swap` binary accepts values as separate arguments or as a single quoted string.
-
-Examples:
+Run the binary with values to sort:
 
 ```bash
 ./push_swap 3 2 1 0
 ./push_swap "3 2 1 0"
 ```
 
-The program validates:
-
-- each argument is a valid number,
-- values fit in an `int`,
-- there are no duplicates,
-- the stack is not already sorted.
-
-## Example
+### Example
 
 ```bash
 ./push_swap 2 1 3
@@ -62,16 +65,21 @@ Possible output:
 sa
 ```
 
+## Validation rules
+
+The program checks that:
+
+- each argument is a valid integer string,
+- the values fit within `int` limits,
+- no duplicate numbers are present,
+- the stack is not already sorted before starting.
+
 ## Notes
 
-- If the arguments are invalid, the program prints an error and exits.
-- If the stack is already sorted, no operations are printed.
-- The project is designed to follow the `push_swap` rules from the 42 curriculum.
+- Invalid input returns an error and exits.
+- If the input is already sorted, the program exits without printing operations.
+- This implementation is designed for the `push_swap` requirements from the `42` school.
 
 ## Author
 
 - `hmimouni`
-
----
-
-Good luck with your GitHub repository!
