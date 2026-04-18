@@ -65,6 +65,10 @@ Possible output:
 sa
 ```
 
+https://github.com/user-attachments/assets/2dd4ae5b-4046-4e18-8b24-5ef4b83ee3a1
+
+
+
 ## Validation rules
 
 The program checks that:
