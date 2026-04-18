@@ -2,6 +2,10 @@
 
 A `42` project that sorts a stack of integers using only the allowed `push_swap` operations.
 
+https://github.com/user-attachments/assets/447d74b3-e6c8-48ff-8774-afcd7b46984a
+
+
+
 ## About
 
 `push_swap` computes a minimal sequence of operations to sort a stack in ascending order.
@@ -64,11 +68,6 @@ Possible output:
 ```bash
 sa
 ```
-
-
-### Test 200 
-
-https://github.com/user-attachments/assets/fb5c0902-2db8-4aff-82d7-88eaa195a2d2
 
 ## Validation rules
 
