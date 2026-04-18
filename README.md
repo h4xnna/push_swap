@@ -65,9 +65,10 @@ Possible output:
 sa
 ```
 
-https://github.com/user-attachments/assets/2dd4ae5b-4046-4e18-8b24-5ef4b83ee3a1
 
+### Test 200 
 
+https://github.com/user-attachments/assets/fb5c0902-2db8-4aff-82d7-88eaa195a2d2
 
 ## Validation rules
 
