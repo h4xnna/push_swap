@@ -1,4 +1,5 @@
 # Push_swap
+<img width="689" height="323" alt="Screenshot_20260617_164008" src="https://github.com/user-attachments/assets/3e2c919f-0e98-4482-9afa-b035ea0778f8" />
 
 A `42` project that sorts a stack of integers using only the allowed `push_swap` operations.
 
